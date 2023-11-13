@@ -34,10 +34,13 @@ nav ul li {
 nav a {
     color: #fff;
     text-decoration: none;
-    float: left;
-    display: block;
-    text-align: center;
     padding: 14px 16px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover, nav a:focus {
+    background-color: #4CAF50;
+    color: #f4f4f4;
 }
 
 /* Main Content Styles */
@@ -49,6 +52,11 @@ section {
 img {
     max-width: 100%;
     height: auto;
+    transition: transform 0.3s ease;
+}
+
+img:hover, img:focus {
+    transform: scale(1.05);
 }
 
 /* Responsive Design */
@@ -79,7 +87,7 @@ img {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 8px;
-    transition: background-color 0.3s, box-shadow 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
 }
 
 /* Gradient Background Button */
@@ -128,3 +136,4 @@ img {
     color: #00688B;
     text-decoration: underline;
 }
+
