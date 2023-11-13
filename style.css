@@ -76,9 +76,53 @@ img:hover, img:focus {
     }
 }
 
+/* Program Cards */
+.program-card {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.program-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.program-card h3 {
+    margin-top: 0.5em;
+    color: #333;
+}
+
+/* Testimonials */
+#testimonials blockquote {
+    background-color: #f9f9f9;
+    border-left: 10px solid #4CAF50;
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-style: italic;
+    color: #555;
+}
+
+/* Blog Section */
+#blog article {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#blog article h3 {
+    color: #333;
+}
+
 /* Unified Button Styles */
 .button, .gradient-button, .shadow-button, .press-button {
     border: none;
+    color: white;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -87,27 +131,24 @@ img:hover, img:focus {
     cursor: pointer;
     border-radius: 8px;
     transition: background-color 0.3s, box-shadow 0.3s;
-    color: white; /* Ensuring readability */
     background-color: #008CBA; /* Default background color for buttons */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Button Hover Effects */
 .button:hover, .gradient-button:hover, .shadow-button:hover, .press-button:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Specific Button Color Variations */
 .gradient-button {
     background: linear-gradient(to right, #6dd5ed, #2193b0);
 }
 
 .shadow-button {
-    background-color: #4CAF50; /* Distinct color */
+    background-color: #4CAF50;
 }
 
 .press-button {
-    background-color: #f44336; /* Distinct color */
+    background-color: #f44336;
 }
 
 /* Typography: Text Shadow */
