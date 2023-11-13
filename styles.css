@@ -13,14 +13,7 @@ body {
 }
 
 /* Header and Footer */
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-footer {
+header, footer {
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -41,12 +34,21 @@ nav ul li {
 nav a {
     color: #fff;
     text-decoration: none;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
 }
 
 /* Main Content Styles */
 section {
     padding: 20px;
     margin: 20px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Responsive Design */
@@ -59,50 +61,70 @@ section {
     nav ul li {
         margin: 10px 0;
     }
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-@media screen and (max-width: 768px) {
-  /* Styles for screens smaller than 768px */
-}
-/* Base styles */
-nav {
-  background-color: #333;
-  overflow: hidden;
+
+    nav a {
+        float: none;
+        width: 100%;
+    }
 }
 
-nav a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+/* Button Styles */
+.button, .gradient-button, .shadow-button, .press-button {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-  nav a {
-    float: none;
-    width: 100%;
-  }
-}
-.button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 8px;
+/* Gradient Background Button */
+.gradient-button {
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
 }
 
-.button:hover {
-  background-color: #45a049;
+.gradient-button:hover {
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+}
+
+/* Shadow and Hover Effect Button */
+.shadow-button {
+    background-color: #4CAF50;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-button:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* 3D Press Effect Button */
+.press-button {
+    background-color: #008CBA;
+    box-shadow: 0 4px #666;
+}
+
+.press-button:active {
+    background-color: #00688B;
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
+}
+
+/* Typography: Text Shadow */
+.text-shadow {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Hover Effect for Text */
+.hover-text {
+    color: #008CBA;
+    transition: color 0.3s ease;
+}
+
+.hover-text:hover {
+    color: #00688B;
+    text-decoration: underline;
 }
