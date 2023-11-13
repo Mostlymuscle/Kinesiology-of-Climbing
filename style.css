@@ -76,10 +76,9 @@ img:hover, img:focus {
     }
 }
 
-/* Button Styles */
+/* Unified Button Styles */
 .button, .gradient-button, .shadow-button, .press-button {
     border: none;
-    color: white;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -87,38 +86,28 @@ img:hover, img:focus {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 8px;
-    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    color: white; /* Ensuring readability */
+    background-color: #008CBA; /* Default background color for buttons */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect */
 }
 
-/* Gradient Background Button */
+/* Button Hover Effects */
+.button:hover, .gradient-button:hover, .shadow-button:hover, .press-button:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Specific Button Color Variations */
 .gradient-button {
     background: linear-gradient(to right, #6dd5ed, #2193b0);
 }
 
-.gradient-button:hover {
-    background: linear-gradient(to right, #2193b0, #6dd5ed);
-}
-
-/* Shadow and Hover Effect Button */
 .shadow-button {
-    background-color: #4CAF50;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #4CAF50; /* Distinct color */
 }
 
-.shadow-button:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-/* 3D Press Effect Button */
 .press-button {
-    background-color: #008CBA;
-    box-shadow: 0 4px #666;
-}
-
-.press-button:active {
-    background-color: #00688B;
-    box-shadow: 0 1px #666;
-    transform: translateY(4px);
+    background-color: #f44336; /* Distinct color */
 }
 
 /* Typography: Text Shadow */
@@ -136,4 +125,3 @@ img:hover, img:focus {
     color: #00688B;
     text-decoration: underline;
 }
-
