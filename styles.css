@@ -60,3 +60,32 @@ section {
         margin: 10px 0;
     }
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  /* Styles for screens smaller than 768px */
+}
+/* Base styles */
+nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  nav a {
+    float: none;
+    width: 100%;
+  }
+}
